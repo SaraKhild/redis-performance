@@ -3,8 +3,7 @@
 <br>
 
 ## Overview
-This project compares the performance of three different Redis implementations using JMeter: spring-boot-starter-data-redis, redisson-spring-boot-starter, and spring-boot-starter-data-redis-reactive. 
-The tests evaluate the throughput, latency, and resource consumption of each implementation under different load conditions, providing insights into the optimal choice for high-performance, scalable applications.
+This project <mark>compares the performance of three different Redis implementations</mark> using JMeter: <strong>spring-boot-starter-data-redis</strong>, <strong>redisson-spring-boot-starter</strong>, and <strong>spring-boot-starter-data-redis-reactive.</strong> The tests evaluate the <mark>throughput</mark>, <mark>latency</mark>, and <mark>resource consumption of each implementation under different load conditions</mark>, providing insights into the optimal choice for high-performance, scalable applications.
   
 ## Usages
 - Data Redis
@@ -14,12 +13,12 @@ The tests evaluate the throughput, latency, and resource consumption of each imp
 ## Architecture of each the Projects
 
  ### 1-src folder
-   - Configration
-   - Controller
-   - Model
-   - Repository
-   - Service
-   - Util
+   - configration
+   - controller
+   - model
+   - repository
+   - service
+   - util
      
  ### 2-resources folder
    - application.properties
@@ -177,10 +176,18 @@ The tests evaluate the throughput, latency, and resource consumption of each imp
 
 <br>
 
-###### Output :star_struck:
+###### Output :star_struck: 
+ The `spring-boot-starter-data-redis-reactive` implementation seems to have **the best overall performance**, as it shows **lower average response times** and **higher throughput**.`Redisson` and `spring-boot-starter-  data-redis` have **similar performance**.
 
+- Redis:
 <img width="1018" alt="data-redis" src="https://github.com/user-attachments/assets/3644280d-322e-477e-a82d-a75f1f5ffb85">
+
+- Redis Reactive:
+  
 <img width="1024" alt="reactive-redis" src="https://github.com/user-attachments/assets/51c4b752-ecb4-4dfc-84ce-4768881382a9">
+
+- Redisson:
+  
 <img width="1021" alt="redisson" src="https://github.com/user-attachments/assets/d3be5664-c7fe-4065-8c29-1d888e134bb6">
 
 ---
